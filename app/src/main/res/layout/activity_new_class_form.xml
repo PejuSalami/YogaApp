@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewClassForm">
+
+    <TextView
+        android:id="@+id/new_class_form"
+        style="@style/HeaderTextStyle"
+        android:layout_width="256dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/new_class_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toEndOf="@+id/app_logo_small"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/app_logo_small"
+        android:layout_width="93dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/app_logo"
+        tools:ignore="ContentDescription" />
+
+
+    <Spinner
+        android:id="@+id/select_course"
+        android:layout_width="349dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="20"
+
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/select_course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/select_teacher"
+        android:layout_width="349dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="20"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/select_teacher"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <Button
+        android:id="@+id/save_class_button"
+        style="@style/ButtonStyle"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/montserrat"
+        android:onClick="saveClassInstance"
+        android:text="@string/save_class_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="212dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="75dp"
+        android:text="@string/select_date_button"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+
+        android:id="@+id/date_list"
+        android:layout_width="350dp"
+        android:layout_height="301dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="349dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Comments"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <!--    <ListView-->
+<!--        android:id="@+id/date_list"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/save_class_button"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/select_teacher"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCourseForm">
+
+
+    <!--    <TimePicker-->
+    <!--        android:id="@+id/timePickerStartTime"-->
+    <!--        android:layout_width="321dp"-->
+    <!--        android:layout_height="95dp"-->
+    <!--        android:layout_gravity="center"-->
+
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:layout_marginEnd="41dp"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:descendantFocusability="blocksDescendants"-->
+    <!--        android:timePickerMode="spinner"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/timePickerEndTime"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.555"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/app_logo_small"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <TimePicker-->
+    <!--        android:id="@+id/timePickerEndTime"-->
+    <!--        android:layout_width="337dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_below="@+id/timePickerStartTime"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginEnd="40dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:descendantFocusability="blocksDescendants"-->
+    <!--        android:timePickerMode="spinner"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/daysOfWeek"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/addnewcourse"
+        style="@style/HeaderTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Schedule Form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toEndOf="@+id/app_logo_small"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/app_logo_small"
+        android:layout_width="75dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/app_logo" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/Time"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:background="@drawable/border"-->
+    <!--        android:drawableLeft="@drawable/baseline_access_time_24"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:drawableTint="#009688"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Time of Class"-->
+    <!--        android:inputType="time"-->
+    <!--        android:keepScreenOn="false"-->
+    <!--        android:keyboardNavigationCluster="false"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.495"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.276" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/Capacity"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:background="@drawable/border"-->
+    <!--        android:drawableLeft="@drawable/baseline_people_24"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:drawableTint="#009688"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Capacity"-->
+    <!--        android:inputType="number"-->
+    <!--        android:keepScreenOn="false"-->
+    <!--        android:keyboardNavigationCluster="false"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.495"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.361" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/Price"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:background="@drawable/border"-->
+    <!--        android:drawableLeft="@drawable/baseline_currency_pound_24"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:drawableTint="#009688"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Price"-->
+    <!--        android:inputType="number"-->
+    <!--        android:keepScreenOn="false"-->
+    <!--        android:keyboardNavigationCluster="false"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.495"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.525" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/TypeOfClass"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:background="@drawable/border"-->
+    <!--        android:drawableLeft="@drawable/baseline_sports_gymnastics_24"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:drawableTint="#009688"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Type Of Class"-->
+    <!--        android:inputType="text"-->
+    <!--        android:keepScreenOn="false"-->
+    <!--        android:keyboardNavigationCluster="false"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.495"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.609" />
+
+     android:layout_below="@+id/endtime"
+
+    -->
+
+
+    <TextView
+        android:id="@+id/durationOfClass"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/baseline_timelapse_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#009688"
+        android:ems="10"
+        android:hint="Duration of your class"
+        android:keepScreenOn="false"
+        android:keyboardNavigationCluster="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <Spinner
+        android:id="@+id/daysOfWeek"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:drawableTint="#009688"
+        android:entries="@array/dayOfWeekArray"
+        android:hint="@string/daysOfWeek"
+        app:drawableRightCompat="@android:drawable/arrow_down_float"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        tools:ignore="DuplicateIds" />
+
+    <Spinner
+        android:id="@+id/capacity"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:entries="@array/capacityOfClassArray"
+        android:hint="@string/capacity"
+        android:popupBackground="#F2F2F2"
+        app:drawableRightCompat="@android:drawable/arrow_down_float"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478"
+        tools:ignore="DuplicateIds" />
+
+    <Spinner
+        android:id="@+id/price"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:entries="@array/priceOfClassArray"
+        android:hint="@string/price"
+        android:popupBackground="#F2F2F2"
+        app:drawableRightCompat="@android:drawable/arrow_down_float"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309"
+        tools:ignore="DuplicateIds" />
+
+    <Spinner
+        android:id="@+id/typeOfClass"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:entries="@array/typeOfClassArray"
+        android:hint="@string/typeOfClass"
+        android:popupBackground="#F2F2F2"
+        app:drawableRightCompat="@android:drawable/arrow_down_float"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/baseline_description_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#009688"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text"
+        android:keepScreenOn="false"
+        android:keyboardNavigationCluster="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802" />
+
+    <Button
+        android:id="@+id/Add_new_course_button"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Add Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <Button
+        android:id="@+id/starttime"
+        android:layout_width="113dp"
+        android:layout_height="55dp"
+        android:text="Start Time"
+        app:layout_constraintBottom_toTopOf="@+id/durationOfClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capacity"
+        app:layout_constraintVertical_bias="0.819"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/endtime"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="21dp"
+        android:text="End Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/startTimeView"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="164dp"
+        android:text="Start Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <TextView
+        android:id="@+id/endTimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <EditText
+        android:id="@+id/courseTitle"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Course Title"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

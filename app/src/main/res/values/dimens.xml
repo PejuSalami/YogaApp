@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_size">16sp</dimen>
+    <dimen name="btn_txt_size">16sp</dimen>
+    <dimen name="header_txt_size">20sp</dimen>
+    <dimen name="btn_padding">12dp</dimen>
+    <dimen name="btn_width">155dp</dimen>
+    <dimen name="btn_height">60dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="padding_standard">16dp</dimen>
+
+</resources>

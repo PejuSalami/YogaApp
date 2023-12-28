@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">YogaApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="add_newCourse">Add New Course</string>
+    <string name="daysOfWeek">Days Of Week</string>
+    <string name="timeOfClass">Time Of Class</string>
+    <string name="capacity">Capacity</string>
+    <string name="price">Price per class</string>
+    <string name="typeOfClass">Type Of Class</string>
+    <string name="durationOfClass">Duration Of Class</string>
+    <string name="description">Description</string>
+    <string name="save_class_button">Save</string>
+    <string name="select_course">Select Course</string>
+    <string name="select_teacher">Select Instructor</string>
+    <string name="select_date_button">Selected Date</string>
+    <string name="date_view">Date :</string>
+    <string name="new_class_form">New Class Form</string>
+
+    <string-array name="selectCourseArray">
+        <item>--select course--</item>
+        <item>Flow Yoga</item>
+        <item>Aerial Yoga</item>
+        <item>Family Yoga</item>
+    </string-array>
+
+    <string-array name="dayOfWeekArray">
+        <item>--select day of class--</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+
+    </string-array>
+
+    <!--    <string name="spinner_prompt_time">Please select a time</string>-->
+    <string-array name="timeOfClassArray">
+        <item>--select time of class--</item>
+        <item>8am-10am</item>
+        <item>10am-12pm</item>
+        <item>1pm-3pm</item>
+        <item>4pm-6pm</item>
+    </string-array>
+
+    <!--    <string name="spinner_prompt_capacity">&#45;&#45; select capacity of class &#45;&#45;</string>-->
+    <string-array name="capacityOfClassArray">
+        <item>--select capacity of class--</item>
+        <item>10 persons</item>
+        <item>20 persons</item>
+        <item>25 persons</item>
+        <item>30 persons</item>
+    </string-array>
+
+    <!--    <string name="spinner_prompt_price">&#45;&#45; select price of class&#45;&#45;</string>-->
+    <string-array name="priceOfClassArray">
+        <item>--select price of class--</item>
+        <item>£30/session</item>
+        <item>£40/session</item>
+        <item>£50/session</item>
+        <item>£60/session</item>
+    </string-array>
+
+    <!--    <string name="spinner_prompt_type">&#45;&#45; select type of class</string>-->
+    <string-array name="typeOfClassArray">
+        <item>--select type of class--</item>
+        <item>Flow Yoga</item>
+        <item>Aerial Yoga</item>
+        <item>Family Yoga</item>
+    </string-array>
+
+
+</resources>

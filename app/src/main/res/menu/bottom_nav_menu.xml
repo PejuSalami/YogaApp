@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 2 step-->
+    <item
+        android:id="@+id/menu_course"
+        android:title="Course"
+        android:icon="@drawable/course_icon"/>
+    <item
+        android:id="@+id/menu_class"
+        android:title="Class"
+        android:icon="@drawable/class_icon"/>
+</menu>

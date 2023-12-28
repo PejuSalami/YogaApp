@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#F2F2F2</color>
+    <color name="button_background">#C9E19B</color>
+    <color name="action_bar">#C9E19B</color>
+    <color name="text_color_primary">#000000</color>
+    <color name="background_light">#F2F2F2</color> <!-- Soft pale green background -->
+    <color name="background_white">#FFFFFF</color>
+    <color name="card_background">#C9E19B</color>
+    <color name="text_color_secondary">#45000000</color>
+    <color name="header_text_color">#000000</color>
+    <color name="icon_color">#009688</color>
+    <color name="delete_icon_color">#F19690</color>
+
+    </resources>

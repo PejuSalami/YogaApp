@@ -1,0 +1,47 @@
+<!-- res/layout/list_item_course.xml -->
+<!-- res/layout/list_item_course.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Your existing TextView for course details -->
+    <TextView
+        android:id="@+id/courseNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:padding="8dp"/>
+
+    <!-- Edit icon -->
+    <ImageView
+        android:id="@+id/editIcon"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_edit"
+        android:onClick="onEditIconClick"
+        android:contentDescription="icon"
+        app:tint="@color/icon_color"/>
+
+
+    <!-- Delete icon -->
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_delete"
+        android:onClick="onDeleteIconClick"
+        android:contentDescription="icon"
+        app:tint="@color/delete_icon_color"
+        />
+</RelativeLayout>

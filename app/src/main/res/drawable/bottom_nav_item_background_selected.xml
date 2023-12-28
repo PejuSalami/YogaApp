@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <!-- Green color square for the selected state with a corner radius of 60dp -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/card_background"/> <!-- Color for the selected state -->
+            <corners android:radius="60dp"/>
+        </shape>
+    </item>
+</selector>
